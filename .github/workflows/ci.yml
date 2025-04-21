@@ -1,0 +1,13 @@
+name: Hello GitHub Actions
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v3
+
+      - name: Helloメッセージを出力
+        run: echo "GitHub Actions!"
